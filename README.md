@@ -13,7 +13,7 @@ step 5: type python chat.py
 
 step 6: open ngrok and type ngrok http 5000
 
-####check for the following things if error occurs:
+#### check for the following things if error occurs:
 
 curl cmd
 
