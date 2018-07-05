@@ -13,16 +13,16 @@ step 5: type python chat.py
 
 step 6: open ngrok and type ngrok http 5000
 
-#### check for the following things if error occurs:
+## check for the following things if error occurs:
 
-curl cmd
+- curl cmd
 
-then python chat.py
+- then python chat.py
 
-access token should be latest
+- access token should be latest
 
-subscription key in curl should be latest
+- subscription key in curl should be latest
 
-ngrok address
+- ngrok address
 
-check luis
+- check luis
