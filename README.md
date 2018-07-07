@@ -7,7 +7,7 @@ step 2: type virtualenv myenv in cmd in the bot directory
 
 step 3: type myenv\Scripts\activate  to activate virtual env
 
-step 4:(myenv) C:\Users\Abinfinity\Desktop\FB_chat>curl -X POST "https://graph.facebook.com/v2.6/me/subscribed_apps?access_token="YOUR ACCESS TOKEN"
+step 4:(myenv) C:\Users\Abinfinity\Desktop\FB_chat>curl -X POST "https://graph.facebook.com/v2.6/me/subscribed_apps?access_token=" YOUR ACCESS TOKEN"
 
 step 5: type python chat.py
 
