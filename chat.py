@@ -65,7 +65,7 @@ def send_message(recipient_id, response):
     
     
 def chatbot(message,recipient_id):
-    l = luis.Luis(url='https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/f38f6e7a-51d1-4373-a3bf-5803e70f027f?subscription-key=567897c522ae45d9b65f2c6c06cb5316&verbose=true&timezoneOffset=0&q=')
+    l = luis.Luis(url='https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/641864d4-9a31-4172-9532-840a8f38aea0?subscription-key=c250fdf3697543e48f1e6c86e6819593&verbose=true&timezoneOffset=0&q=')
 
     r = l.analyze(message) ## analysing query
     #print (r.intents)          ##printing intents
@@ -172,16 +172,17 @@ def chatbot(message,recipient_id):
         else :
             send_message(recipient_id,random.choice(["I don't understand what you are saying, Please try again ..","I don't really get you, please try again.","Sorry, what??..could you please be more specific"]))
             send_message(recipient_id,"if your doubts are not clear yet, you can always call for help..")
-            send_message(recipient_id, "Not god O:-) ...to our Customer care by clicking down below")
+            send_message(recipient_id, "Not god O:-) ...to our Customer care")
             call_button(recipient_id)
-            none_records(message, best.intent, best.score)
+            #none_records(message, best.intent, best.score)
 
     else :
             send_message(recipient_id,random.choice(["I don't understand what you are saying, Please try again ..","I don't really get you, please try again.","Sorry, what??..could you please be more specific"]))
             send_message(recipient_id,"if your doubts are not clear yet, you can always call for help..")
             send_message(recipient_id, "Not god O:-) ...to our Customer care ")
             call_button(recipient_id)
-            none_records(message, best.intent, best.score)
+            if best.intent != "feedback":
+            	none_records(message, best.intent, best.score)
     
     
 
@@ -200,12 +201,18 @@ def call_button(recipient_id):
 
 
 def none_records(message,intent,score):
-	db = pymysql.connect("localhost", "testuser", "pass123","response.db")
+	db = pymysql.connect("148.72.232.169", "chatbot", "j0b@9Zx1","rannlab_chatbot")
 	cursor = db.cursor()
 	# sql = """CREATE TABLE RESPONSE (message varchar(50),intent varchar(20), score int)"""
 	# cursor.execute(sql)
-	insert = """INSERT INTO RESPONSE VALUES(message,intent,score)"""
-	cursor.execute(insert)
+	# insert = 
+	try :
+		cursor.execute("""INSERT INTO RESPONSE VALUES('%s','%s',%d)""" % (message,intent,score))
+		db.commit()
+
+	except :
+		db.rollback()
+	
 	db.close()
 
 
