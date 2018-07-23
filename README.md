@@ -27,8 +27,8 @@ step 6: open ngrok and type ngrok http 5000
 
 - check luis
 
-## for mysql connection:
+## for mysql connection, enter without quotes:
 
-- mysql -u <username> -h <hosturl> -u
+- mysql -u "username" -h "hosturl" -u 
   - then enter password
 - or use connection.py in repo.
