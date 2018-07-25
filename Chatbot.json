@@ -1,0 +1,2669 @@
+{
+  "luis_schema_version": "3.0.0",
+  "versionId": "0.1",
+  "name": "Chatbot",
+  "desc": "A chatbot for FB page",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "about"
+    },
+    {
+      "name": "address"
+    },
+    {
+      "name": "bye"
+    },
+    {
+      "name": "call"
+    },
+    {
+      "name": "career"
+    },
+    {
+      "name": "Enquiry"
+    },
+    {
+      "name": "feedback"
+    },
+    {
+      "name": "greeting"
+    },
+    {
+      "name": "idea"
+    },
+    {
+      "name": "intern"
+    },
+    {
+      "name": "negative"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "positive"
+    },
+    {
+      "name": "profile"
+    },
+    {
+      "name": "services"
+    },
+    {
+      "name": "spec_service"
+    },
+    {
+      "name": "thank you"
+    }
+  ],
+  "entities": [
+    {
+      "name": "$career",
+      "roles": [
+        "softwaredev",
+        "dataanalyst",
+        "intern",
+        "softwaredeveloper",
+        "dev",
+        "businessanalyst",
+        "developer",
+        "tester"
+      ]
+    },
+    {
+      "name": "$feedback",
+      "roles": []
+    },
+    {
+      "name": "$idea",
+      "roles": [
+        "idea"
+      ]
+    },
+    {
+      "name": "$Pre_product",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [
+    {
+      "name": "$name",
+      "regexPattern": "name is [a-z|A-Z]",
+      "roles": []
+    }
+  ],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "☺️",
+      "intent": "bye",
+      "entities": []
+    },
+    {
+      "text": "about company",
+      "intent": "about",
+      "entities": []
+    },
+    {
+      "text": "about rannlab",
+      "intent": "about",
+      "entities": []
+    },
+    {
+      "text": "address of rannlab",
+      "intent": "address",
+      "entities": []
+    },
+    {
+      "text": "algorithm & data structure designer",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "android app",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "android developer",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "animation/video creator intern",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "application development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "are you having any vacancies?",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "are you having any vacancy?",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "are you provide ecom service",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing app development services?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing cloud and hosting services?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing cloud services?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing cloud support?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing content management services?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing content management support?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing digital marketing service?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing digital marketing sevices?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing digital marketing support?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing e com development service?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing e commerce development service?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing e commerce service?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing ecom development service?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing e-com development service?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing ecom development support?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing e-com development support?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing e-com service?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing e-commerce development service?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing e-commerce service?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing hosting and cloud services?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing hosting and cloud support?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing hosting services?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing hosting support?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing it infrastructure services?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing it infrastructure support?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing mobile app development support?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing mobile application development services?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing mobile application development support?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing mobile application support?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing mobile development services?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing softwar services?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing software development services?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing software development support?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing software support?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing website design and development services?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing website design and development support?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing website design services?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing website design support?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing website development services?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing website development support?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "are you providing website support?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "as a intern",
+      "intent": "intern",
+      "entities": []
+    },
+    {
+      "text": "as an intern",
+      "intent": "intern",
+      "entities": []
+    },
+    {
+      "text": "as intern",
+      "intent": "intern",
+      "entities": []
+    },
+    {
+      "text": "as machine learning intern",
+      "intent": "intern",
+      "entities": []
+    },
+    {
+      "text": "asp.net",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "asp.net developer",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "best place for a fresher to start his career.",
+      "intent": "feedback",
+      "entities": []
+    },
+    {
+      "text": "best to work, friendly seniors and great work environment.",
+      "intent": "feedback",
+      "entities": []
+    },
+    {
+      "text": "bii",
+      "intent": "bye",
+      "entities": []
+    },
+    {
+      "text": "business development",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "business development manager",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "bye",
+      "intent": "bye",
+      "entities": []
+    },
+    {
+      "text": "byee",
+      "intent": "bye",
+      "entities": []
+    },
+    {
+      "text": "call center",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "call centre",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "call no.",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "call number",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "call rannlab",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "calling no.",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "calling number",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "can you tell me profiles for which you are hiring?",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "cloud",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "cloud support",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "company no.",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "company number",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "contact no. of rannlab",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "content management",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "content writer interns",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "could you appoint me as developer in your company?",
+      "intent": "career",
+      "entities": [
+        {
+          "entity": "$career",
+          "startPos": 24,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "could you tell me about my project blues?",
+      "intent": "Enquiry",
+      "entities": [
+        {
+          "entity": "$Pre_product",
+          "startPos": 35,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "could you tell me anything regarding my project blues?",
+      "intent": "Enquiry",
+      "entities": []
+    },
+    {
+      "text": "customer care no.",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "customer care number",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "data entry",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "database developer & research",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "date and venue",
+      "intent": "address",
+      "entities": []
+    },
+    {
+      "text": "digital marketing",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "do you have a caling number?",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "do you have a calling no.?",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "do you have any openings for developer?",
+      "intent": "career",
+      "entities": [
+        {
+          "entity": "$career",
+          "startPos": 29,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "do you have any vacancies?",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "do you have any vacancy?",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "do you provide job?",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "do you provide service in cloud?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide service in digital marketing?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide service in ecom development?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide service in ecommerce development?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide service in e-commerce development?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide service in hosting ?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide service in hosting and cloud support?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide service in marketing?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide service in mobile app development?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide service in mobile app support?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide service in mobile app?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide service in mobile application ?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide service in mobile application development?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide service in software development?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide service in website designing?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide service in website development and design?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide service in website development and designing?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide service in website development?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide service in website?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide services in content management ?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide services in content managing ?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide services in hosting?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide services in it infrastructure ?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide services in website designing and development?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide support in content management?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide support in content managing?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide support in ecom development?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide support in e-com development?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide support in ecommerce development?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide support in e-commerce development?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide support in it infrastucture?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide support in mobile app?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide support in mobile application development?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "do you provide support in software development ?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "e com development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "e commerce development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "ecom development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "e-com development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "e-commerce",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "ecommerce development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "e-commerce development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "first of all thanks to my mentors which support me in my highs & lows .",
+      "intent": "feedback",
+      "entities": []
+    },
+    {
+      "text": "for job",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "good bye",
+      "intent": "bye",
+      "entities": []
+    },
+    {
+      "text": "good bye sir",
+      "intent": "bye",
+      "entities": []
+    },
+    {
+      "text": "good day",
+      "intent": "bye",
+      "entities": []
+    },
+    {
+      "text": "good evening",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "good job provided by you",
+      "intent": "feedback",
+      "entities": []
+    },
+    {
+      "text": "good morning",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "good night",
+      "intent": "bye",
+      "entities": []
+    },
+    {
+      "text": "good night sir",
+      "intent": "bye",
+      "entities": []
+    },
+    {
+      "text": "graphics designer",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "gud bye",
+      "intent": "bye",
+      "entities": []
+    },
+    {
+      "text": "gud byee",
+      "intent": "bye",
+      "entities": []
+    },
+    {
+      "text": "gud day",
+      "intent": "bye",
+      "entities": []
+    },
+    {
+      "text": "gud morning my name is abhi",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "gud night",
+      "intent": "bye",
+      "entities": []
+    },
+    {
+      "text": "gud night sir",
+      "intent": "bye",
+      "entities": []
+    },
+    {
+      "text": "have you any services",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "hello my name is abhimanyu",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "hey",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "heya",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "hi sir i want to intern for your company",
+      "intent": "intern",
+      "entities": []
+    },
+    {
+      "text": "hii",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "hiring?",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "hola",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "hosting",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "hosting and cloud services",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "how can i contact you?",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "how is my project going?",
+      "intent": "Enquiry",
+      "entities": [
+        {
+          "entity": "$Pre_product",
+          "startPos": 10,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "how to contact you?",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "i am in dying need of your services",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "i am interested in discussing my idea with you",
+      "intent": "idea",
+      "entities": []
+    },
+    {
+      "text": "i am looking for a android app",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for a job as software tester",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "i am looking for a job in machine learning",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "i am looking for a job in management",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "i am looking for a job in networking",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "i am looking for a job in software development",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "i am looking for a job in web designing",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "i am looking for a job in web development",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "i am looking for an android app",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for android app",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for cloud and hosting services",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for cloud services",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for content management",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for digital marketing",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for e com development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for e commerce development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for ecom development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for e-com development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for ecommerce development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for e-commerce development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for hosting and cloud services",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for hosting services",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for it infrastructure",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for mobile app development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for mobile application development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for site development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for software dev",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for software development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for web development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for website designing",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for website designing and development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am looking for website development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i am not looking for a job",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i am search job",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "i have a product to made",
+      "intent": "idea",
+      "entities": []
+    },
+    {
+      "text": "i have a proposal for you",
+      "intent": "idea",
+      "entities": []
+    },
+    {
+      "text": "i have an idea regarding the problem of railways.",
+      "intent": "idea",
+      "entities": []
+    },
+    {
+      "text": "i have learnt a lot of new and good things.",
+      "intent": "feedback",
+      "entities": []
+    },
+    {
+      "text": "i have some idea",
+      "intent": "idea",
+      "entities": []
+    },
+    {
+      "text": "i have something for you",
+      "intent": "idea",
+      "entities": []
+    },
+    {
+      "text": "i just came to known you are hiring",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "i need a android app",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need a app",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need a job",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "i need a mobile app",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need a mobile application",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need a software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need a website",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need address of rannlab",
+      "intent": "address",
+      "entities": []
+    },
+    {
+      "text": "i need an android app",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need an app",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need android app",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need android application",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need cloud",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need cloud services",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need cloud support",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need content management",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need content management support",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need digital marketing",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need digital marketing service",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need e commerce website",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need ecom website",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need e-commerce website",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need help in cloud support",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need help in hosting my website",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need hosting service",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need hosting services",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need mobile application",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need software development services",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need software hosting",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need to host my app",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need to host my website",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need website hosting",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need you help in e-commerce development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need you help in hosting services",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need you to build an android app",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need you to help me hosting my site",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need you to help me hosting my website",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need your cloud services",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need your cloud support",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need your content management help",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need your help in app development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need your help in cloud and hosting services",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need your help in content management",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need your help in digital marketing",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need your help in ecom development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need your help in e-commerce website development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need your help in hosting and cloud services",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need your help in it infrastructure",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need your help in mobile app development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need your help in software development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need your help in website designing",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need your help in website development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need your it infrastructure service",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i need your service",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "i not look job",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i require a retail management software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i require a retail management system",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i require a school management software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i require a school management system",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i require a university management software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i require a university management system",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i require an android app",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i require android app",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i require android application",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i require cloud support",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i require retail management software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i require retail management system",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i require school management software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i require school management system",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i require shop management software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i require shop management system",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i require university management software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i require university management system",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want a job in your company as a job",
+      "intent": "career",
+      "entities": [
+        {
+          "entity": "$career",
+          "startPos": 34,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "i want a lead care management system software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want a management system software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want a retail store management software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want a retail store management system",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want a school management software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want a school management system",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want a shop management software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want a shop management system",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want a university management software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want a university management system",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want address of rannlab",
+      "intent": "address",
+      "entities": []
+    },
+    {
+      "text": "i want an android app",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want android app",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want cloud",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want cloud service",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want cloud support",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want contact no. of rannlab",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "i want contact no. of your company",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "i want contact number of rannlab",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "i want contact number of your company",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "i want content management",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want digital marketing",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want e com development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want e commerce development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want ecom development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want e-com development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want ecommerce development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want e-commerce development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want hosting",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want hosting and cloud service",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want hosting support",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want internship in your company",
+      "intent": "career",
+      "entities": [
+        {
+          "entity": "$career",
+          "startPos": 7,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "i want it infrastructure",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want lead care management system software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want management system",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want management system software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want marketing",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want mobile app",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want mobile app development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want mobile application development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want retail store management software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want retail store management system",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want school management software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want school management system",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want shop management software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want shop management system",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want site design",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want site designing",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want soft dev",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want software dev",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want software development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want to build a project named blah",
+      "intent": "idea",
+      "entities": [
+        {
+          "entity": "$idea",
+          "startPos": 32,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "i want to build this with your company",
+      "intent": "idea",
+      "entities": [
+        {
+          "entity": "$idea",
+          "startPos": 16,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "i want to enquire about job vacancy",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "i want to host a website",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want to host my site",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want to intern for your company",
+      "intent": "intern",
+      "entities": []
+    },
+    {
+      "text": "i want to join as web developer.",
+      "intent": "career",
+      "entities": [
+        {
+          "entity": "$career",
+          "startPos": 22,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "i want to join your company as a job",
+      "intent": "career",
+      "entities": [
+        {
+          "entity": "$career",
+          "startPos": 33,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "i want to join your company as analyst",
+      "intent": "career",
+      "entities": [
+        {
+          "entity": "$career",
+          "startPos": 31,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "i want to join your company as marketing analyst",
+      "intent": "career",
+      "entities": [
+        {
+          "entity": "$career",
+          "startPos": 41,
+          "endPos": 47
+        }
+      ]
+    },
+    {
+      "text": "i want to know about my project named idea",
+      "intent": "Enquiry",
+      "entities": [
+        {
+          "entity": "$Pre_product",
+          "startPos": 38,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "i want to know about my project.",
+      "intent": "Enquiry",
+      "entities": []
+    },
+    {
+      "text": "i want to know about the status of my product idea",
+      "intent": "Enquiry",
+      "entities": [
+        {
+          "entity": "$Pre_product",
+          "startPos": 46,
+          "endPos": 49
+        }
+      ]
+    },
+    {
+      "text": "i want university management software",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want university management system",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want web designing",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want web development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want website design",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want website design and development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i want website development and designing",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "i wanted information regarding my project logind.",
+      "intent": "Enquiry",
+      "entities": [
+        {
+          "entity": "$Pre_product",
+          "startPos": 42,
+          "endPos": 47
+        }
+      ]
+    },
+    {
+      "text": "i wanted to know about my project",
+      "intent": "Enquiry",
+      "entities": []
+    },
+    {
+      "text": "i wanted to know the status of project",
+      "intent": "Enquiry",
+      "entities": [
+        {
+          "entity": "$Pre_product",
+          "startPos": 31,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "i wanted to share my idea with you.",
+      "intent": "idea",
+      "entities": []
+    },
+    {
+      "text": "i wanted to work as a developer.",
+      "intent": "career",
+      "entities": [
+        {
+          "entity": "$career",
+          "startPos": 22,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "i wanted to work with you on my project incoming.",
+      "intent": "idea",
+      "entities": []
+    },
+    {
+      "text": "i'm not looking for a job",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "info about rannlab",
+      "intent": "about",
+      "entities": []
+    },
+    {
+      "text": "information about company",
+      "intent": "about",
+      "entities": []
+    },
+    {
+      "text": "information about rannlab",
+      "intent": "about",
+      "entities": []
+    },
+    {
+      "text": "information about your company",
+      "intent": "about",
+      "entities": []
+    },
+    {
+      "text": "intern",
+      "intent": "intern",
+      "entities": []
+    },
+    {
+      "text": "interns manager",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "internship",
+      "intent": "intern",
+      "entities": []
+    },
+    {
+      "text": "internship in software development",
+      "intent": "intern",
+      "entities": []
+    },
+    {
+      "text": "is there any hiring",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "is there any hiring in developer profile",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "is there any hiring in network profile",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "is there any job for me?",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "is there any opening for fresher?",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "is there any vacancy for php developer",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "is there any vacancy in sales?",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "it infrastructure",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "it services",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "job change",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "konichiwa",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "lookin for a job",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "looking for a job change",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "looking for a job change.",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "machine learning",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "marketing",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "marketing executive",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "mobile app development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "mobile application development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "my idea can solve railway problem.",
+      "intent": "idea",
+      "entities": []
+    },
+    {
+      "text": "namaste",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "network security",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "networking",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "nice working with you",
+      "intent": "feedback",
+      "entities": []
+    },
+    {
+      "text": "no",
+      "intent": "negative",
+      "entities": []
+    },
+    {
+      "text": "no job",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "no look for a job",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "no look job",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "no looking job",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "no thank you",
+      "intent": "negative",
+      "entities": []
+    },
+    {
+      "text": "no thanks",
+      "intent": "negative",
+      "entities": []
+    },
+    {
+      "text": "nope",
+      "intent": "negative",
+      "entities": []
+    },
+    {
+      "text": "not at all",
+      "intent": "negative",
+      "entities": []
+    },
+    {
+      "text": "not job",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "not look for a job",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "not looking for job",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "ok",
+      "intent": "positive",
+      "entities": []
+    },
+    {
+      "text": "okay",
+      "intent": "positive",
+      "entities": []
+    },
+    {
+      "text": "project analysis & research intern",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "radhe radhe",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "rannlab address",
+      "intent": "address",
+      "entities": []
+    },
+    {
+      "text": "rannlab call",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "relevant opening for my profile?",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "sales",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "sales rep",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "sales representative",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "searching for a job as android developer",
+      "intent": "career",
+      "entities": [
+        {
+          "entity": "$career",
+          "startPos": 31,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "seo",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "service",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "services",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "smo",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "soft dev",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "software dev",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "software developer",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "software development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "software development vacancy available yes or no?",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "software tester",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "startup manager",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "tell me about rannlab",
+      "intent": "about",
+      "entities": []
+    },
+    {
+      "text": "tell me about your comapany",
+      "intent": "about",
+      "entities": []
+    },
+    {
+      "text": "thank u",
+      "intent": "thank you",
+      "entities": []
+    },
+    {
+      "text": "thank you",
+      "intent": "thank you",
+      "entities": []
+    },
+    {
+      "text": "thank you so much",
+      "intent": "thank you",
+      "entities": []
+    },
+    {
+      "text": "thanks",
+      "intent": "thank you",
+      "entities": []
+    },
+    {
+      "text": "thanks to everyone who provide me the opportunity to work over there.",
+      "intent": "feedback",
+      "entities": []
+    },
+    {
+      "text": "thanks u",
+      "intent": "thank you",
+      "entities": []
+    },
+    {
+      "text": "thanks you",
+      "intent": "thank you",
+      "entities": []
+    },
+    {
+      "text": "ty",
+      "intent": "thank you",
+      "entities": []
+    },
+    {
+      "text": "tysm",
+      "intent": "thank you",
+      "entities": []
+    },
+    {
+      "text": "ui & ux analyst",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "wat service",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "web design",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "web designing",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "web developer",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "web developer & designer",
+      "intent": "profile",
+      "entities": []
+    },
+    {
+      "text": "website designing",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "website designing and development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "website development",
+      "intent": "spec_service",
+      "entities": []
+    },
+    {
+      "text": "well done..good job",
+      "intent": "feedback",
+      "entities": []
+    },
+    {
+      "text": "what are service?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "what are services?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "what are the services provided by you?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "what are your services?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "what is rannlab",
+      "intent": "about",
+      "entities": []
+    },
+    {
+      "text": "what is rannlab?",
+      "intent": "about",
+      "entities": []
+    },
+    {
+      "text": "what is the status of my project idea ?",
+      "intent": "Enquiry",
+      "entities": [
+        {
+          "entity": "$Pre_product",
+          "startPos": 33,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "what is the venue of your office?",
+      "intent": "address",
+      "entities": []
+    },
+    {
+      "text": "what is the venue?",
+      "intent": "address",
+      "entities": []
+    },
+    {
+      "text": "what is your address?",
+      "intent": "address",
+      "entities": []
+    },
+    {
+      "text": "what is your call number.?",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "what is your calling no.?",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "what is your calling number.?",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "what it services?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "what kind of job do you offer?",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "what rannlab",
+      "intent": "about",
+      "entities": []
+    },
+    {
+      "text": "what rannlab?",
+      "intent": "about",
+      "entities": []
+    },
+    {
+      "text": "what service?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "what services?",
+      "intent": "services",
+      "entities": []
+    },
+    {
+      "text": "where can i call?",
+      "intent": "call",
+      "entities": []
+    },
+    {
+      "text": "where is your company located?",
+      "intent": "address",
+      "entities": []
+    },
+    {
+      "text": "where is your office establish?",
+      "intent": "address",
+      "entities": []
+    },
+    {
+      "text": "where is your office established?",
+      "intent": "address",
+      "entities": []
+    },
+    {
+      "text": "where is your office located?",
+      "intent": "address",
+      "entities": []
+    },
+    {
+      "text": "where is your office?",
+      "intent": "address",
+      "entities": []
+    },
+    {
+      "text": "which type if hiring is there?",
+      "intent": "career",
+      "entities": []
+    },
+    {
+      "text": "ya",
+      "intent": "positive",
+      "entities": []
+    },
+    {
+      "text": "yeah sure",
+      "intent": "positive",
+      "entities": []
+    },
+    {
+      "text": "yes",
+      "intent": "positive",
+      "entities": []
+    },
+    {
+      "text": "yes please",
+      "intent": "positive",
+      "entities": []
+    },
+    {
+      "text": "you have done a good job",
+      "intent": "feedback",
+      "entities": []
+    },
+    {
+      "text": "yup",
+      "intent": "positive",
+      "entities": []
+    },
+    {
+      "text": "😀",
+      "intent": "bye",
+      "entities": []
+    },
+    {
+      "text": "😁",
+      "intent": "bye",
+      "entities": []
+    },
+    {
+      "text": "😅",
+      "intent": "bye",
+      "entities": []
+    },
+    {
+      "text": "😇",
+      "intent": "bye",
+      "entities": []
+    },
+    {
+      "text": "😊",
+      "intent": "bye",
+      "entities": []
+    },
+    {
+      "text": "🙂",
+      "intent": "bye",
+      "entities": []
+    }
+  ]
+}
