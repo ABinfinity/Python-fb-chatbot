@@ -87,6 +87,7 @@ def chatbot(message,recipient_id):
             send_message(recipient_id,random.choice(["for which profile you want to apply?","Do you have any specific profile in mind?", "What is your choice of profile?"]))
         
         elif best.intent == "intern" :
+            send_message(recipient_id,random.choice(["ok..","sure.."]))
             send_message(recipient_id,"we provide internship for the following period")
             send_message(recipient_id,"45 days (unpaid)")
             send_message(recipient_id,"3 months (unpaid)")
@@ -126,7 +127,7 @@ def chatbot(message,recipient_id):
         elif best.intent == "bye":
             send_message(recipient_id,random.choice(["^_^",":)",":D","(y)"]))
         elif best.intent == "thank you":
-            send_message(recipient_id,random.choice(["Anytime my friend :)","no mentions please :)","Anytime :)"]))
+            send_message(recipient_id,random.choice(["Anytime my friend :)"," :)","Anytime :)"]))
 
         elif best.intent == "negative" :
             send_message(recipient_id,random.choice(["ok, it was good talking to you ^_^","It was nice talking to you ^_^"]))
@@ -167,6 +168,12 @@ def chatbot(message,recipient_id):
             send_message(recipient_id,"but only in between 10 to 6")
             send_message(recipient_id,"unless you wanted to rob our tower... :D ")
 
+        elif best.intent == "about" :
+        	send_message(recipient_id,"Let me tell you about my company..")
+        	send_message(recipient_id,"RannLab Technologies Pvt. Ltd. provides customized IT solutions, website design and many Software products.")
+        	send_message(recipient_id,"Our Vision is to provide top quality services in the fields of ERP Solutions, Mobile Application Development, Open Source Customization, Computer software development and Web Designing everything under one-roof.")
+        	visit_button(recipient_id)
+
 
 
         else :
@@ -174,15 +181,16 @@ def chatbot(message,recipient_id):
             send_message(recipient_id,"if your doubts are not clear yet, you can always call for help..")
             send_message(recipient_id, "Not god O:-) ...to our Customer care")
             call_button(recipient_id)
-            #none_records(message, best.intent, best.score)
+            if recipient_id != '1669830646395897':
+            	none_records(message, best.intent, best.score)# storing records for research purposes
 
     else :
             send_message(recipient_id,random.choice(["I don't understand what you are saying, Please try again ..","I don't really get you, please try again.","Sorry, what??..could you please be more specific"]))
             send_message(recipient_id,"if your doubts are not clear yet, you can always call for help..")
             send_message(recipient_id, "Not god O:-) ...to our Customer care ")
             call_button(recipient_id)
-            if best.intent != "feedback":
-            	none_records(message, best.intent, best.score)
+            if recipient_id != '1669830646395897':
+            	none_records(message, best.intent, best.score) # storing records for research purposes
     
     
 
@@ -199,15 +207,15 @@ def call_button(recipient_id):
     response_message = json.dumps(message_data)
     req = requests.post(post_message_url,headers={"Content-Type": "application/json"},data=response_message)
 
-
+# store none response to database
 def none_records(message,intent,score):
 	db = pymysql.connect("148.72.232.169", "chatbot", "j0b@9Zx1","rannlab_chatbot")
 	cursor = db.cursor()
+	
 	# sql = """CREATE TABLE RESPONSE (message varchar(50),intent varchar(20), score int)"""
 	# cursor.execute(sql)
-	# insert = 
 	try :
-		cursor.execute("""INSERT INTO RESPONSE VALUES('%s','%s',%d)""" % (message,intent,score))
+		cursor.execute("""INSERT INTO RESPONSE VALUES('%s','%s',%.2f)""" % (message,intent,score))
 		db.commit()
 
 	except :
